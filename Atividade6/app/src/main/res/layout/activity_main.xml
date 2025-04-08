@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Finalizar Prova"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="215dp"
+        android:layout_height="211dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/pergunta1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Qual é a capital dos EUA?" />
+
+        <RadioButton
+            android:id="@+id/resposta1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A - Washington" />
+
+        <RadioButton
+            android:id="@+id/resposta2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B - New York" />
+
+        <RadioButton
+            android:id="@+id/resposta3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" C - Las Vegas" />
+
+        <RadioButton
+            android:id="@+id/resposta4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="D - Los Angeles" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="215dp"
+        android:layout_height="211dp"
+        android:layout_marginStart="96dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.11">
+
+        <TextView
+            android:id="@+id/pergunta2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quem nunca pilotou pela ferrari?" />
+
+        <RadioButton
+            android:id="@+id/resposta5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A - Niki Lauda" />
+
+        <RadioButton
+            android:id="@+id/resposta6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B - Lewis Hamilton" />
+
+        <RadioButton
+            android:id="@+id/resposta7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C - Ayrton Senna" />
+
+        <RadioButton
+            android:id="@+id/resposta8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="D - Kimi Raikkonen" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
