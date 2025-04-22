@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="305dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="104dp"
+        android:text="Prova 1 - Programação para Dispositivos Móveis"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/questao1"
+        android:layout_width="303dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo">
+
+        <TextView
+            android:id="@+id/pergunta1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1- O método onCreate é obrigatório em uma Activity." />
+
+        <RadioButton
+            android:id="@+id/verdadeiro1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verdadeiro" />
+
+        <RadioButton
+            android:id="@+id/falso1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Falso" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/questao2"
+        android:layout_width="303dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questao1">
+
+        <TextView
+            android:id="@+id/pergunta2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2- Java e Kotlin são as linguagens nativas para o desenvolvimento de aplicativos Android." />
+
+        <RadioButton
+            android:id="@+id/verdadeiro2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verdadeiro" />
+
+        <RadioButton
+            android:id="@+id/falso2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Falso" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/questao3"
+        android:layout_width="303dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questao2">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3- Um aplicativo Android pode ter apenas uma Activity." />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verdadeiro" />
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Falso" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/botao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="36dp"
+        android:text="Finalizar Prova"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questao3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
