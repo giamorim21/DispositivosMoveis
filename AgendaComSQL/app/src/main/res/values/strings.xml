@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AgendaComSQL</string>
+    <string name="hint_contato">Insira o nome do contato</string>
+    <string name="hint_telefone">Insira o telefone do contato</string>
+    <string name="label_salvar">Salvar</string>
+    <string name="toast_salvar">O contato foi inserido</string>
+</resources>
