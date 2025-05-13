@@ -56,11 +56,19 @@ public class MainActivity extends AppCompatActivity {
         usuarioAtual.senha = senhaInformado;
         usuarioAtual.id = 0;
 
+        //Não é permitido executar ações no banco de dados na Thread principal do Android sendo assim,
+        //precio criar uma nova Thread para que a atividade seja executada em background 
+
         new Thread(new Runnable() {
             @Override
             public void run() {
+                //chama o método para inserir um novo contato
                 db.usuarioDAO().insertUsuario(usuarioAtual);
+
+                //chama o método para buscar todos os contatos salvos na tabela
                 List<Usuario> listaUsuarios = db.usuarioDAO().selectAll();
+
+                //exiba todos os contatos no logcat
                 for (Usuario usarioCorrente: listaUsuarios){
                     Log.d("USUARIOS", "Login: " + usarioCorrente.login + " - SENHA: " + usarioCorrente.senha);
                 }
