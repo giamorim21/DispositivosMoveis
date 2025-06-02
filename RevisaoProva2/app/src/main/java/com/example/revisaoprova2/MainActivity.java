@@ -1,3 +1,16 @@
+//Primeiro Passo: 
+//• importar o Room Database no projeto na pasta gradle no arquivo build.gradle.kts
+//• na aba dependências inserir:
+
+//  Código que deve ser inserido
+//  implementation("androidx.room:room-runtime:2.7.1")
+//  annotationProcessor("androidx.room:room-compiler:2.7.1")
+
+//• depois de inserir, acionar o ‘Sync Now’
+
+//Segundo Passo: 
+//• arrumar o layout com os templates
+
 package com.example.revisaoprova2;
 
 import android.os.Bundle;
